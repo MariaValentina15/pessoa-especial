@@ -63,14 +63,13 @@ p {
 .hearts span:nth-child(5) { left: 90%; animation-delay: 3s; }
 
 /* animação */
-@keyframes aparecer {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
+@keyframes subir {
+  0% {
+    transform: translateY(0) scale(1);
     opacity: 1;
-    transform: translateY(0);
-    animation: aparecer 2s ease forwards;
+  }
+  100% {
+    transform: translateY(-800px) scale(1.5);
+    opacity: 0;
   }
 }
